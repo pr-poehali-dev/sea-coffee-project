@@ -123,7 +123,7 @@ const Index = () => {
               <Card className="border-ocean/20">
                 <CardContent className="p-8">
                   <img
-                    src="https://cdn.poehali.dev/projects/556eb957-006c-4f84-ad20-e2b85c178258/files/ae44f305-c656-4d40-8c9c-be76971b8d66.jpg"
+                    src="https://cdn.poehali.dev/projects/556eb957-006c-4f84-ad20-e2b85c178258/files/ea88b29e-d731-489c-9ac0-22e089f602f4.jpg"
                     alt="Логотип Морская Пена"
                     className="w-full rounded-xl shadow-lg mb-6"
                   />
@@ -452,7 +452,7 @@ const Index = () => {
                   <Card className="border-ocean/20 overflow-hidden">
                     <CardContent className="p-0">
                       <img
-                        src="https://cdn.poehali.dev/projects/556eb957-006c-4f84-ad20-e2b85c178258/files/ae44f305-c656-4d40-8c9c-be76971b8d66.jpg"
+                        src="https://cdn.poehali.dev/projects/556eb957-006c-4f84-ad20-e2b85c178258/files/ea88b29e-d731-489c-9ac0-22e089f602f4.jpg"
                         alt="Логотип"
                         className="w-full h-64 object-cover"
                       />
