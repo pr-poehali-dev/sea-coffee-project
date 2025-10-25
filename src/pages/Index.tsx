@@ -117,54 +117,117 @@ const Index = () => {
           <section className="animate-fade-in">
             <h2 className="text-4xl font-bold text-anchor mb-8 flex items-center gap-3">
               <Icon name="Anchor" className="text-ocean" />
-              Логотип
+              Варианты логотипов
             </h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <Card className="border-ocean/20">
-                <CardContent className="p-8">
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+              <Card className="border-ocean/20 hover:border-ocean transition-all cursor-pointer hover:shadow-xl">
+                <CardContent className="p-4">
                   <img
                     src="https://cdn.poehali.dev/projects/556eb957-006c-4f84-ad20-e2b85c178258/files/ea88b29e-d731-489c-9ac0-22e089f602f4.jpg"
-                    alt="Логотип Морская Пена"
-                    className="w-full rounded-xl shadow-lg mb-6"
+                    alt="Вариант 1"
+                    className="w-full aspect-square object-cover rounded-lg mb-3"
                   />
-                  <h3 className="text-2xl font-bold text-anchor mb-3">Основной логотип</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Логотип сочетает морскую тематику с символом кофе. Якорь и чашка создают узнаваемый образ кофейни у моря.
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    <div className="px-4 py-2 bg-ocean rounded-lg text-white text-sm">#0EA5E9</div>
-                    <div className="px-4 py-2 bg-sand rounded-lg text-anchor text-sm">#FEF7CD</div>
-                    <div className="px-4 py-2 bg-anchor rounded-lg text-white text-sm">#403E43</div>
-                  </div>
+                  <h4 className="font-bold text-anchor text-center">Вариант 1</h4>
+                  <p className="text-xs text-muted-foreground text-center">Якорь и чашка</p>
                 </CardContent>
               </Card>
-              <Card className="border-ocean/20">
-                <CardContent className="p-8">
-                  <div className="bg-gradient-to-br from-ocean to-ocean-dark rounded-xl p-12 mb-6 flex items-center justify-center min-h-[300px]">
-                    <div className="text-center text-white">
-                      <Icon name="Anchor" size={120} className="mx-auto mb-4" />
-                      <h3 className="text-4xl font-bold">Морская Пена</h3>
-                      <p className="text-ocean-light text-lg mt-2">Coffee & Sea</p>
-                    </div>
-                  </div>
-                  <h3 className="text-2xl font-bold text-anchor mb-3">Варианты использования</h3>
-                  <ul className="space-y-2 text-muted-foreground">
-                    <li className="flex items-start gap-2">
-                      <Icon name="Check" size={20} className="text-ocean mt-0.5" />
-                      <span>На светлом фоне — полноцветный логотип</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Icon name="Check" size={20} className="text-ocean mt-0.5" />
-                      <span>На тёмном фоне — белый логотип</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Icon name="Check" size={20} className="text-ocean mt-0.5" />
-                      <span>Минимальный размер: 40×40 пикселей</span>
-                    </li>
-                  </ul>
+
+              <Card className="border-ocean/20 hover:border-ocean transition-all cursor-pointer hover:shadow-xl">
+                <CardContent className="p-4">
+                  <img
+                    src="https://cdn.poehali.dev/projects/556eb957-006c-4f84-ad20-e2b85c178258/files/1c68b406-29a0-4128-a221-5266dee995c4.jpg"
+                    alt="Вариант 2"
+                    className="w-full aspect-square object-cover rounded-lg mb-3"
+                  />
+                  <h4 className="font-bold text-anchor text-center">Вариант 2</h4>
+                  <p className="text-xs text-muted-foreground text-center">Бейдж с акцентами</p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-ocean/20 hover:border-ocean transition-all cursor-pointer hover:shadow-xl">
+                <CardContent className="p-4">
+                  <img
+                    src="https://cdn.poehali.dev/projects/556eb957-006c-4f84-ad20-e2b85c178258/files/1c0520a1-420b-4807-a69e-33b8ea265bfe.jpg"
+                    alt="Вариант 3"
+                    className="w-full aspect-square object-cover rounded-lg mb-3"
+                  />
+                  <h4 className="font-bold text-anchor text-center">Вариант 3</h4>
+                  <p className="text-xs text-muted-foreground text-center">Канат и кофе</p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-ocean/20 hover:border-ocean transition-all cursor-pointer hover:shadow-xl">
+                <CardContent className="p-4">
+                  <img
+                    src="https://cdn.poehali.dev/projects/556eb957-006c-4f84-ad20-e2b85c178258/files/7ba6814a-da7e-4781-807a-4bb2d5a47f02.jpg"
+                    alt="Вариант 4"
+                    className="w-full aspect-square object-cover rounded-lg mb-3"
+                  />
+                  <h4 className="font-bold text-anchor text-center">Вариант 4</h4>
+                  <p className="text-xs text-muted-foreground text-center">Винтажный штурвал</p>
                 </CardContent>
               </Card>
             </div>
+
+            <Card className="border-ocean/20 mb-8">
+              <CardContent className="p-8">
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <img
+                      src="https://cdn.poehali.dev/projects/556eb957-006c-4f84-ad20-e2b85c178258/files/4508af35-fe52-4af1-982a-d5532ccaaca4.jpg"
+                      alt="Современный дизайн"
+                      className="w-full rounded-xl shadow-lg mb-4"
+                    />
+                    <h3 className="text-xl font-bold text-anchor mb-2">Вариант 5: Волна и пар</h3>
+                    <p className="text-muted-foreground text-sm">
+                      Абстрактный современный дизайн, где волны океана переходят в пар от кофе
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-anchor mb-4">Фирменная палитра</h3>
+                    <div className="space-y-3 mb-6">
+                      <div className="flex items-center gap-3">
+                        <div className="w-16 h-16 bg-ocean rounded-lg shadow"></div>
+                        <div>
+                          <p className="font-semibold text-anchor">Ocean Blue</p>
+                          <p className="text-sm text-muted-foreground">#0EA5E9</p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <div className="w-16 h-16 bg-sand rounded-lg shadow"></div>
+                        <div>
+                          <p className="font-semibold text-anchor">Sand Beige</p>
+                          <p className="text-sm text-muted-foreground">#FEF7CD</p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <div className="w-16 h-16 bg-anchor rounded-lg shadow"></div>
+                        <div>
+                          <p className="font-semibold text-white">Anchor Gray</p>
+                          <p className="text-sm text-muted-foreground">#403E43</p>
+                        </div>
+                      </div>
+                    </div>
+                    <h3 className="text-xl font-bold text-anchor mb-3">Рекомендации</h3>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <Icon name="Check" size={18} className="text-ocean mt-0.5" />
+                        <span>Минимальный размер: 40×40px</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <Icon name="Check" size={18} className="text-ocean mt-0.5" />
+                        <span>Форматы: SVG, PNG, PDF</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <Icon name="Check" size={18} className="text-ocean mt-0.5" />
+                        <span>Защитная зона: 10% от размера</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </section>
         )}
 
@@ -452,7 +515,7 @@ const Index = () => {
                   <Card className="border-ocean/20 overflow-hidden">
                     <CardContent className="p-0">
                       <img
-                        src="https://cdn.poehali.dev/projects/556eb957-006c-4f84-ad20-e2b85c178258/files/ea88b29e-d731-489c-9ac0-22e089f602f4.jpg"
+                        src="https://cdn.poehali.dev/projects/556eb957-006c-4f84-ad20-e2b85c178258/files/1c68b406-29a0-4128-a221-5266dee995c4.jpg"
                         alt="Логотип"
                         className="w-full h-64 object-cover"
                       />
