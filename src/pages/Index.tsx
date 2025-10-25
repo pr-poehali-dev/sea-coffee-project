@@ -34,7 +34,7 @@ const Index = () => {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-3">
               <Icon name="Waves" className="text-ocean" size={32} />
-              <h1 className="text-2xl font-bold text-ocean">Морская Пена</h1>
+              <h1 className="text-2xl font-bold text-ocean">Tide Coffee</h1>
             </div>
             <div className="hidden md:flex gap-6">
               {menuItems.map((item) => (
@@ -67,12 +67,12 @@ const Index = () => {
                 <div className="flex items-center gap-4 mb-6">
                   <Icon name="Anchor" size={64} />
                   <div>
-                    <h2 className="text-5xl md:text-7xl font-bold mb-2">Морская Пена</h2>
-                    <p className="text-xl text-ocean-light">Кофейня у берега мечты</p>
+                    <h2 className="text-5xl md:text-7xl font-bold mb-2">Tide Coffee</h2>
+                    <p className="text-xl text-ocean-light">Where waves meet coffee</p>
                   </div>
                 </div>
                 <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
-                  Фирменный стиль кофейни, вдохновлённый морем, свободой и ароматом свежесваренного кофе
+                  Современный фирменный стиль кофейни, где энергия океанских приливов встречается с бодрящим ароматом кофе
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Button onClick={() => setActiveSection('logo')} size="lg" className="bg-white text-ocean hover:bg-sand">
@@ -175,53 +175,49 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <h3 className="text-2xl font-bold text-anchor mb-6">Варианты логотипов под концепции</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-              <Card className="border-ocean/20 hover:border-ocean transition-all cursor-pointer hover:shadow-xl">
-                <CardContent className="p-4">
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <Card className="border-ocean/20">
+                <CardContent className="p-8">
                   <img
-                    src="https://cdn.poehali.dev/projects/556eb957-006c-4f84-ad20-e2b85c178258/files/ea88b29e-d731-489c-9ac0-22e089f602f4.jpg"
-                    alt="Морская Пена"
-                    className="w-full aspect-square object-cover rounded-lg mb-3"
+                    src="https://cdn.poehali.dev/projects/556eb957-006c-4f84-ad20-e2b85c178258/files/249b1a96-8373-45a3-a804-228a6757a933.jpg"
+                    alt="Tide Coffee Логотип"
+                    className="w-full rounded-xl shadow-lg mb-6"
                   />
-                  <h4 className="font-bold text-anchor text-center">Морская Пена</h4>
-                  <p className="text-xs text-muted-foreground text-center">Якорь и чашка</p>
+                  <h3 className="text-2xl font-bold text-anchor mb-3">Основной логотип</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Минималистичная волна, образующая форму кофейной чашки. Современный дизайн с чёткими линиями.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <div className="px-4 py-2 bg-ocean rounded-lg text-white text-sm">#14B8A6</div>
+                    <div className="px-4 py-2 bg-coffee rounded-lg text-white text-sm">#D97706</div>
+                    <div className="px-4 py-2 bg-anchor rounded-lg text-white text-sm">#403E43</div>
+                  </div>
                 </CardContent>
               </Card>
-
-              <Card className="border-ocean/20 hover:border-ocean transition-all cursor-pointer hover:shadow-xl">
-                <CardContent className="p-4">
-                  <img
-                    src="https://cdn.poehali.dev/projects/556eb957-006c-4f84-ad20-e2b85c178258/files/5282e48c-c2da-46e0-9d7a-90ac331819b4.jpg"
-                    alt="Маяк/Гавань"
-                    className="w-full aspect-square object-cover rounded-lg mb-3"
-                  />
-                  <h4 className="font-bold text-anchor text-center">Маяк / Гавань</h4>
-                  <p className="text-xs text-muted-foreground text-center">Маяк и кофе</p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-ocean/20 hover:border-ocean transition-all cursor-pointer hover:shadow-xl">
-                <CardContent className="p-4">
-                  <img
-                    src="https://cdn.poehali.dev/projects/556eb957-006c-4f84-ad20-e2b85c178258/files/b3585a66-e8cd-492d-8482-ed371c60a56f.jpg"
-                    alt="Tide & Coffee"
-                    className="w-full aspect-square object-cover rounded-lg mb-3"
-                  />
-                  <h4 className="font-bold text-anchor text-center">Tide & Coffee</h4>
-                  <p className="text-xs text-muted-foreground text-center">Волна и капля</p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-ocean/20 hover:border-ocean transition-all cursor-pointer hover:shadow-xl">
-                <CardContent className="p-4">
-                  <img
-                    src="https://cdn.poehali.dev/projects/556eb957-006c-4f84-ad20-e2b85c178258/files/8eb0ebeb-c257-4def-b03d-40ee010280f9.jpg"
-                    alt="Captain's Brew"
-                    className="w-full aspect-square object-cover rounded-lg mb-3"
-                  />
-                  <h4 className="font-bold text-anchor text-center">Captain's Brew</h4>
-                  <p className="text-xs text-muted-foreground text-center">Парусник и пар</p>
+              <Card className="border-ocean/20">
+                <CardContent className="p-8">
+                  <div className="bg-gradient-to-br from-ocean to-ocean-dark rounded-xl p-12 mb-6 flex items-center justify-center min-h-[300px]">
+                    <div className="text-center text-white">
+                      <Icon name="Waves" size={120} className="mx-auto mb-4" />
+                      <h3 className="text-4xl font-bold">Tide Coffee</h3>
+                      <p className="text-ocean-light text-lg mt-2">Where waves meet coffee</p>
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-anchor mb-3">Варианты использования</h3>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <Icon name="Check" size={20} className="text-ocean mt-0.5" />
+                      <span>Минималистичный дизайн для современной аудитории</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Icon name="Check" size={20} className="text-ocean mt-0.5" />
+                      <span>Турквозно-коричневая палитра</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Icon name="Check" size={20} className="text-ocean mt-0.5" />
+                      <span>Минимальный размер: 40×40 пикселей</span>
+                    </li>
+                  </ul>
                 </CardContent>
               </Card>
             </div>
@@ -297,8 +293,8 @@ const Index = () => {
               <Card className="border-ocean/20">
                 <CardContent className="p-0 overflow-hidden">
                   <img
-                    src="https://cdn.poehali.dev/projects/556eb957-006c-4f84-ad20-e2b85c178258/files/60347d1e-dc55-44d1-9a0a-c3d77a7a8d89.jpg"
-                    alt="Морской паттерн"
+                    src="https://cdn.poehali.dev/projects/556eb957-006c-4f84-ad20-e2b85c178258/files/019f2ef3-6e9e-4bff-aada-4fb2285bff03.jpg"
+                    alt="Tide Coffee паттерн"
                     className="w-full h-[400px] object-cover"
                   />
                 </CardContent>
@@ -310,22 +306,22 @@ const Index = () => {
                     <div className="flex items-center gap-3">
                       <Icon name="Anchor" size={32} className="text-ocean" />
                       <div>
-                        <p className="font-semibold text-anchor">Якоря</p>
-                        <p className="text-sm text-muted-foreground">Символ надёжности и морской романтики</p>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Icon name="Waves" size={32} className="text-ocean" />
-                      <div>
                         <p className="font-semibold text-anchor">Волны</p>
-                        <p className="text-sm text-muted-foreground">Динамика и свобода океана</p>
+                        <p className="text-sm text-muted-foreground">Плавные линии, образующие ритм приливов</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
-                      <Icon name="Coffee" size={32} className="text-ocean" />
+                      <Icon name="Coffee" size={32} className="text-coffee" />
                       <div>
                         <p className="font-semibold text-anchor">Кофейные зёрна</p>
-                        <p className="text-sm text-muted-foreground">Основа нашего бизнеса</p>
+                        <p className="text-sm text-muted-foreground">Органичные формы в турквозно-коричневой гамме</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Icon name="Droplet" size={32} className="text-ocean" />
+                      <div>
+                        <p className="font-semibold text-anchor">Капли</p>
+                        <p className="text-sm text-muted-foreground">Энергия и динамика</p>
                       </div>
                     </div>
                   </div>
@@ -364,14 +360,14 @@ const Index = () => {
                   </div>
                   <div className="relative z-10">
                     <div className="flex items-center gap-2 mb-1">
-                      <Icon name="Anchor" size={24} />
-                      <span className="text-xl font-bold">Морская Пена</span>
+                      <Icon name="Waves" size={24} />
+                      <span className="text-xl font-bold">Tide Coffee</span>
                     </div>
-                    <p className="text-ocean-light text-sm">Coffee & Sea</p>
+                    <p className="text-ocean-light text-sm">Where waves meet coffee</p>
                   </div>
                   <div className="relative z-10">
-                    <p className="text-2xl font-bold mb-1">Иван Морской</p>
-                    <p className="text-ocean-light mb-3">Бариста-капитан</p>
+                    <p className="text-2xl font-bold mb-1">Alex Morgan</p>
+                    <p className="text-ocean-light mb-3">Head Barista</p>
                     <div className="space-y-1 text-sm">
                       <p className="flex items-center gap-2">
                         <Icon name="Phone" size={14} />
@@ -379,7 +375,7 @@ const Index = () => {
                       </p>
                       <p className="flex items-center gap-2">
                         <Icon name="Mail" size={14} />
-                        info@seafoam.coffee
+                        hello@tidecoffee.com
                       </p>
                     </div>
                   </div>
@@ -387,25 +383,25 @@ const Index = () => {
 
                 <div className="bg-white border-2 border-ocean rounded-2xl p-8 shadow-2xl aspect-[1.75/1] flex flex-col justify-between">
                   <div className="text-center">
-                    <Icon name="Anchor" size={48} className="text-ocean mx-auto mb-2" />
-                    <h3 className="text-2xl font-bold text-ocean">Морская Пена</h3>
-                    <p className="text-anchor text-sm">Кофейня у берега мечты</p>
+                    <Icon name="Waves" size={48} className="text-ocean mx-auto mb-2" />
+                    <h3 className="text-2xl font-bold text-ocean">Tide Coffee</h3>
+                    <p className="text-anchor text-sm">Where waves meet coffee</p>
                   </div>
                   <div className="text-center space-y-2 text-sm text-anchor">
                     <p className="flex items-center justify-center gap-2">
                       <Icon name="MapPin" size={16} className="text-ocean" />
-                      ул. Набережная, 42
+                      Coastal Avenue, 15
                     </p>
                     <p className="flex items-center justify-center gap-2">
                       <Icon name="Globe" size={16} className="text-ocean" />
-                      www.seafoam.coffee
+                      www.tidecoffee.com
                     </p>
                     <div className="flex justify-center gap-3 mt-3">
                       <div className="w-8 h-8 bg-ocean rounded-full flex items-center justify-center">
                         <Icon name="Instagram" size={16} className="text-white" />
                       </div>
-                      <div className="w-8 h-8 bg-ocean rounded-full flex items-center justify-center">
-                        <Icon name="Facebook" size={16} className="text-white" />
+                      <div className="w-8 h-8 bg-coffee rounded-full flex items-center justify-center">
+                        <Icon name="Coffee" size={16} className="text-white" />
                       </div>
                     </div>
                   </div>
@@ -448,9 +444,9 @@ const Index = () => {
             <div className="max-w-4xl mx-auto">
               <Card className="border-ocean/20 mb-8 overflow-hidden">
                 <div className="bg-gradient-to-br from-ocean to-ocean-dark p-8 text-white text-center">
-                  <Icon name="Anchor" size={48} className="mx-auto mb-3" />
-                  <h3 className="text-3xl font-bold mb-2">Морская Пена</h3>
-                  <p className="text-ocean-light">Кофейное меню</p>
+                  <Icon name="Waves" size={48} className="mx-auto mb-3" />
+                  <h3 className="text-3xl font-bold mb-2">Tide Coffee</h3>
+                  <p className="text-ocean-light">Coffee Menu</p>
                 </div>
                 <CardContent className="p-8">
                   <div className="grid md:grid-cols-2 gap-6">
@@ -505,16 +501,16 @@ const Index = () => {
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold text-anchor mb-4">Наша история</h3>
                   <p className="text-muted-foreground mb-4">
-                    «Морская Пена» — это не просто кофейня. Это место, где встречаются море и кофе, 
-                    где каждая чашка наполнена ароматом свободы и морской романтики.
+                    Tide Coffee — это место, где энергия океанских приливов встречается с бодрящим ароматом свежесваренного кофе. 
+                    Современная кофейня с минималистичным дизайном и прибрежной душой.
                   </p>
                   <p className="text-muted-foreground mb-4">
-                    Мы создали пространство, вдохновлённое морскими путешествиями и культурой кофе. 
-                    Наш фирменный стиль отражает эту философию в каждой детали — от логотипа до упаковки.
+                    Наш фирменный стиль отражает философию движения и обновления — как приливы меняют береговую линию, 
+                    так и каждая чашка кофе начинает новый день с правильной энергии.
                   </p>
                   <p className="text-muted-foreground">
-                    Мы верим, что хороший кофе, как и море, может изменить настроение, вдохновить 
-                    на новые открытия и подарить моменты настоящего счастья.
+                    Мы создали пространство, где турквозная свежесть океана сочетается с теплотой кофейных оттенков, 
+                    образуя современный и запоминающийся визуальный язык.
                   </p>
                 </CardContent>
               </Card>
@@ -661,7 +657,7 @@ const Index = () => {
                       <Icon name="Mail" size={24} className="text-ocean mt-1" />
                       <div>
                         <p className="font-semibold text-anchor">Email</p>
-                        <p className="text-muted-foreground">info@seafoam.coffee</p>
+                        <p className="text-muted-foreground">hello@tidecoffee.com</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
@@ -709,11 +705,11 @@ const Index = () => {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Icon name="Anchor" size={32} />
-                <span className="text-xl font-bold">Морская Пена</span>
+                <Icon name="Waves" size={32} />
+                <span className="text-xl font-bold">Tide Coffee</span>
               </div>
               <p className="text-ocean-light text-sm">
-                Кофейня у берега мечты. Свежий кофе и морская атмосфера.
+                Where waves meet coffee. Современная прибрежная кофейня.
               </p>
             </div>
             <div>
@@ -736,13 +732,13 @@ const Index = () => {
               <h4 className="font-bold mb-4">Контакты</h4>
               <ul className="space-y-2 text-sm text-ocean-light">
                 <li>+7 (900) 123-45-67</li>
-                <li>info@seafoam.coffee</li>
+                <li>hello@tidecoffee.com</li>
                 <li>ул. Набережная, 42</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-ocean-light/20 pt-6 text-center text-sm text-ocean-light">
-            <p>© 2024 Морская Пена. Все права защищены.</p>
+            <p>© 2024 Tide Coffee. All rights reserved.</p>
           </div>
         </div>
       </footer>

@@ -63,13 +63,18 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				ocean: {
-					DEFAULT: '#0EA5E9',
-					dark: '#0284C7',
-					light: '#38BDF8'
+					DEFAULT: '#14B8A6',
+					dark: '#0D9488',
+					light: '#5EEAD4'
 				},
 				sand: {
 					DEFAULT: '#FEF7CD',
 					dark: '#FDE68A'
+				},
+				coffee: {
+					DEFAULT: '#D97706',
+					dark: '#92400E',
+					light: '#FCD34D'
 				},
 				anchor: '#403E43',
 				foam: '#FFFFFF'
